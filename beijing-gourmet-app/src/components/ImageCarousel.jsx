@@ -1,14 +1,14 @@
 import { useState, useEffect, useRef } from "react";
 
 const images = [
+  "src/assets/images/beijing_gourmet_meal.jpg",
   "src/assets/images/chow_mein.JPG",
   "src/assets/images/mixed_veggies.JPG",
   "src/assets/images/bbq_pork.JPG",
   "src/assets/images/soup.JPG",
   "src/assets/images/mushu_pork.JPG",
   "src/assets/images/friedrice.JPG",
-  "src/assets/images/shrimp.JPG",
-  "src/assets/images/beijing_gourmet_meal.jpg"
+  "src/assets/images/shrimp.JPG"
 ];
 
 export default function ImageCarousel() {

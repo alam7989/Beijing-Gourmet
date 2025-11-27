@@ -2,7 +2,7 @@ import './App.css'
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import MenuPage from './pages/MenuPage'
-import OurStoryPage from './pages/OurStoryPage'
+import AboutPage from './pages/AboutPage'
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/menu" element={<MenuPage/>}/>
-        <Route path="/our_story" element={<OurStoryPage/>}/>
+        <Route path="/about" element={<AboutPage/>}/>
       </Routes>
     </HashRouter>
   )

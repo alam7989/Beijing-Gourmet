@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar"
 import ImageCarousel from "../components/ImageCarousel";
+import { NavLink } from "react-router-dom";
 
 const HomePage = () => {
     return (
@@ -66,8 +67,11 @@ const HomePage = () => {
                         text-white 
                         bg-[#7a1515] hover:bg-[#9c0606] 
                         rounded-full px-5 py-2
-                    ">
-                        Explore Our Menu
+                    "
+                    >
+                        <NavLink to="/menu" id="logo_link" className="flex items-center">
+                            Explore Our Menu
+                        </NavLink>
                     </button>
                 </div>
             </section>

@@ -19,7 +19,7 @@ const Nav = ({ hamburgerOpen }) => {
             ">
                 <NavLink to="/" className={linkClasses}>Home</NavLink>
                 <NavLink to="/menu" className={linkClasses}>Menu</NavLink>
-                <NavLink to="/our_story" className={linkClasses}>Our Story</NavLink>
+                <NavLink to="/about" className={linkClasses}>About</NavLink>
             </nav>
 
             {/* mobile/portriat nav dropdown */}
