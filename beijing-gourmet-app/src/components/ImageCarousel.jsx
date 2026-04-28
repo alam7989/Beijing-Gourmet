@@ -1,14 +1,24 @@
 import { useState, useEffect, useRef } from "react";
 
+// import images into file for Vercel
+import beijingGourmetMealImage from "../assets/images/beijing_gourmet_meal.jpg"
+import chowMeinImage from "../assets/images/chow_mein.JPG"
+import mixedVeggiesImage from "../assets/images/mixed_veggies.JPG"
+import bbqPorkImage from "../assets/images/bbq_pork.JPG"
+import soupImage from "../assets/images/soup.JPG"
+import mushuPorkImage from "../assets/images/mushu_pork.JPG"
+import friedRiceImage from "../assets/images/friedrice.JPG"
+import shrimpImage from "../assets/images/shrimp.JPG"
+
 const images = [
-  "src/assets/images/beijing_gourmet_meal.jpg",
-  "src/assets/images/chow_mein.JPG",
-  "src/assets/images/mixed_veggies.JPG",
-  "src/assets/images/bbq_pork.JPG",
-  "src/assets/images/soup.JPG",
-  "src/assets/images/mushu_pork.JPG",
-  "src/assets/images/friedrice.JPG",
-  "src/assets/images/shrimp.JPG"
+  beijingGourmetMealImage,
+  chowMeinImage,
+  mixedVeggiesImage,
+  bbqPorkImage,
+  soupImage,
+  mushuPorkImage,
+  friedRiceImage,
+  shrimpImage
 ];
 
 export default function ImageCarousel() {

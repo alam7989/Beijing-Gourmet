@@ -2,6 +2,10 @@ import Navbar from "../components/Navbar"
 import ImageCarousel from "../components/ImageCarousel";
 import { NavLink } from "react-router-dom";
 
+// import images into file for Vercel
+import broccoliBeefImage from "../assets/images/broccoli_beef_transparent.webp";
+import fireImage from "../assets/images/fire.jpg"
+
 const HomePage = () => {
     return (
       <>
@@ -20,7 +24,7 @@ const HomePage = () => {
                     gap-7 max-w-[1200px]
                 ">
                     <img
-                        src="src/assets/images/broccoli_beef_transparent.webp"
+                        src={broccoliBeefImage}
                         className="
                         w-[60vw] max-w-[300px] 
                         md:w-[35vw] md:max-w-[450px]
@@ -35,9 +39,11 @@ const HomePage = () => {
                 </div>
             </section>
   
-            <section className="
-                relative w-screen h-screen 
-                bg-cover bg-center bg-[url(src/assets/images/fire.jpg)]
+            <section 
+                style={{ backgroundImage: `url(${fireImage})` }}
+                className="
+                    relative w-screen h-screen 
+                    bg-cover
             ">
                 <h1 className="
                     absolute 
