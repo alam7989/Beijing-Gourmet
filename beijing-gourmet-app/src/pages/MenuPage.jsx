@@ -4,13 +4,14 @@ import MenuNavbar from "../components/MenuNavbar";
 import menuData from "../data/MenuData";
 
 const MenuPage = () => {
+    const data = menuData();
     return (
         <>
             <Navbar />
 
             <div className="flex">
                 {/* Left fixed sidenav */}
-                <MenuNavbar categories={Object.keys(menuData())} />
+                <MenuNavbar categories={Object.keys(data)} />
 
                 {/* Main content */}
                 <div
@@ -23,7 +24,7 @@ const MenuPage = () => {
                         gap-2
                     "
                 >
-                    {Object.entries(menuData()).map(([category, value]) => (
+                    {Object.entries(data).map(([category, value]) => (
                         <MenuCard
                             key={`${category}-card`}
                             category={category}

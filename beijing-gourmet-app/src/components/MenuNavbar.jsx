@@ -2,15 +2,15 @@ const MenuNavbar = ({ categories }) => {
     return (
         <nav className="
             bg-[#7a1515] text-white 
-            z-[10]
-            p-4
-            fixed left-0  /* height of your Navbar */
-            h-full
+            z-[40] /* below Navbar*/
+            fixed top-0 left-0
+            h-screen /* Use screen height for full coverage (for scroll capabilities)*/
             w-[23vw]
-            overflow-y-auto /*allows scrolling*/
+            pt-25 /* Offset content so it starts below Navbar */
             pb-10
-            hidden
-            md:block
+            px-4
+            overflow-y-auto
+            hidden md:block
         ">
             <ul className="space-y-4">
                 {categories.map((category, i) => (

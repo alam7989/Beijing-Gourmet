@@ -51,7 +51,7 @@ const HomePage = () => {
                 </h1>
                 <div className="
                     absolute left-1/2 -translate-x-1/2 
-                    top-[18%] md:top-[20%]
+                    top-[18%] md:top-[25%]
                     w-[85vw] md:w-[60vw] max-w-[900px]
                     bg-[#f5f5f5] 
                     p-4 md:p-8 

@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar"
 
 const aboutPStyle = () => {
-    return `text-xl md:text-2xl`
+    return `text-xl md:text-2xl italic`
 }
 
 const h4Style = () => {
@@ -15,27 +15,30 @@ const AboutPage = () => {
         <>
             <Navbar />
             <section className="
-                w-screen h-[70vh] max-h-200 md:h-[60vh]
+                w-screen h-[70vh] max-h-100 md:h-[60vh]
                 flex flex-col items-center 
                 px-6 md:px-12 py-10 md:py-15
                 gap-5
                 text-center
-                text-black
+                text-white
+                bg-black
             ">
                 <h1 className="
-                    text-2xl md:text-5xl font-bold italic 
+                    text-2xl md:text-5xl font-medium italic 
                     text-center md:text-left
                 ">
                     Our Story:
                 </h1>
-                <p className={aboutPStyle()}>Since 2002, Beijing Gourmet has been serving fresh and delicious Chinese food.</p>
-                <p className={aboutPStyle()}>Our talented, experienced staff works hard to create each dish from scratch.</p>
-                <p className={aboutPStyle()}>Every ingredient is hand-chopped and cooked to perfection.</p>
-                <p className={aboutPStyle()}>Enjoy our flavorful house-recipes with friends and family!</p>
+                <p className={aboutPStyle()}>
+                    Since 2002, Beijing Gourmet has been serving fresh and delicious Chinese food.
+                    Our talented, experienced staff works hard to create each dish from scratch.
+                    Every ingredient is hand-chopped and cooked to perfection.
+                    Enjoy our flavorful house-recipes with friends and family!
+                </p>
             </section>
 
             <section className="
-                w-screen h-screen
+                w-screen
                 flex flex-col
                 items-center
                 gap:[5vh] md:gap-[5vh]
@@ -56,11 +59,10 @@ const AboutPage = () => {
                     top-full
                     m-0
                     p-10
-                    h-[50vh] md:h-[45vh]
                     text-xl
                     italic 
                     text-black
-                    gap-10
+                    gap-7
                 ">
                     <div className="
                         bg-[#ffd900]
@@ -73,7 +75,7 @@ const AboutPage = () => {
                     <div className="
                         flex flex-col
                         gap-2
-                        w-[85vw] md:w-[40vw]
+                        w-[85vw] md:w-[50vw]
                     ">
                         <h4 className={h4Style()}>
                             Business Hours:
